@@ -36,15 +36,15 @@
     </header>
 
 
-    <section id="about">
-        <div class="about-container">
-            <div class="photo">
+    <section id="about" style="text-align: center;">
+        <div class="about-container" >
+            <!-- <div class="photo">
                 <img src="resources/perfil.jpg" alt="Foto de Lautaro Malleret">
-            </div>
+            </div> -->
             <div class="info">
-                <h1>Lautaro Malleret</h1>
-                <p class="title">Estudiante de Sistemas | Desarrollador Java</p>
-                <p class="description">Soy estudiante avanzado de la Licenciatura en Sistemas en la UNGS y trabajo como
+                <h1>&lt;Portfolio&gt; &lt;Lautaro Malleret&gt;</h1>
+                <p class="title">Estudiante de Sistemas | Developer Java</p>
+                <!-- <p class="description">Soy estudiante avanzado de la Licenciatura en Sistemas en la UNGS y trabajo como
                     ayudante de 2da en materias de programacion. En este rol doy clases, ademas de corregir examenes,
                     gestiono material didactico y diseño trabajos prácticos. A lo largo de mi carrera, he adquirido
                     experiencia con tecnologías como Java, Spring, SQL y Kotlin, y me apasiona seguir desarrollando
@@ -53,13 +53,18 @@
                     pasante, donde pueda aplicar mis conocimientos y seguir aprendiendo en un entorno profesional. Estoy
                     enfocado en aportar soluciones innovadoras y ser parte de un equipo que valore el aprendizaje y el
                     crecimiento continuo.</p>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <section>
-        <h2>Proyectos</h2>
+        <h2 class="subtitle">Proyectos</h2>
         <div class="projects">
+            <div class="project" data-project="project">
+                <img src="resources/api-canchasba/canchasba-api.png" alt="Proyecto">
+                <h3>API de canchas de futbol de buenos aires </h3>
+            </div>
+
             <div class="project" data-project="project1">
                 <img src="resources/Wordle/Wordle.png" alt="Proyecto 1">
                 <h3>Wordle de nombres - juego de palabras</h3>
@@ -82,13 +87,56 @@
                 <img src="resources/Arm - Wordle/Texto.png" alt="Proyecto 5">
                 <h3>Wordle pero en ARM - dessarrollado en assembler</h3>
             </div>
-            <div class="project" data-project="project6">
-                <img src="resources/tecnico/pc (1).jpg" alt="Proyecto 6">
-                <h3>Mateninmiento de hardware - Hobbie</h3>
-            </div>
+
         </div>
     </section>
 
+    <div id="project" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" data-project="project">&times;</button>
+            <h2>API - CANCHASBA</h2>
+
+            <!-- Subtítulo con enfoque del proyecto -->
+            <h3 class="project-subtitle">Proyecto enfocado en el diseño y ejecucion de una API-REST. 
+
+            </h3>
+
+            <!-- Tecnologías o habilidades utilizadas -->
+            <div class="tech-used">
+                <p><strong>Tecnologías utilizadas:</strong> Java, Springboot, Git, SQL, Maven</p>
+            </div>
+
+            <!-- Carrusel de imágenes -->
+            <div class="image-grid">
+                <div><img src="resources/api-canchasba/canchasba-api (1).png" alt="Imagen 1 del proyecto"></div>
+                <div><img src="resources/api-canchasba/canchasba-api (2).png" alt="Imagen 2 del proyecto"></div>
+                <div><img src="resources/api-canchasba/canchasba-api (3).png" alt="Imagen 3 del proyecto"></div>
+                <div><img src="resources/api-canchasba/canchasba-api (4).png" alt="Imagen 4 del proyecto"></div>
+                <div><img src="resources/api-canchasba/canchasba-api.png" alt="Imagen 5 del proyecto"></div>
+                
+            </div>
+            <!-- Descripción detallada del proyecto -->
+            <p class="project-description, modal-content" style="text-align: start;">
+                Desarrollé una API REST para un portal de gestión de canchas de fútbol en la provincia de Buenos Aires. 
+                La API permite consultar, agregar, modificar y eliminar información sobre canchas, incluyendo detalles como el nombre, dirección, zona, tipo de cancha, 
+                cantidad de canchas, teléfono de contacto y calificación de usuarios. 
+                Implementé endpoints para filtrar canchas por diversos parámetros, como nombre, zona y tamaño. Además, la API gestiona la autenticación y 
+                las variables de configuración a través de entorno, y está diseñada para ser fácilmente consumida por aplicaciones web y móviles.<br><br>
+                Backend : <b>JAVA 17 con SPRINGBOOT</b> <br>
+                Base de datos : <b>POSTGRESQL</b> (manejado con JPA y gestor DBEAVER)<br>
+                Control de versiones : <b>GIT</b><br>
+                Manejador de dependencias : <b>MAVEN</b><br>
+                Despliegue : <b>RENDER con DOCKER</b><br>
+                Documentacion : <b>SWAGGER</b> <br>
+
+                link: <a href="https://canchasba-api.onrender.com/swagger-ui/index.html">https://canchasba-api.onrender.com/swagger-ui/index.html</a>
+                
+
+            </p>
+            <a href="https://github.com/LautaroMalleret/canchasba-api" class="repo-button" target="_blank">Ver código en
+                GitHub</a>
+        </div>
+    </div>
 
     <div id="project1" class="modal">
         <div class="modal-content">
@@ -124,7 +172,7 @@
                 aleatorios.
                 Fue una experiencia valiosa ya que me permitió aplicar mis habilidades técnicas y trabajar en equipo
                 para crear un juego desafiante y emocionante.</p>
-            <a href="https://github.com/tuusuario/repositorio" class="repo-button" target="_blank">Ver código en
+            <a href="https://gitlab.com/AleAima/tpwordle" class="repo-button" target="_blank">Ver código en
                 GitHub</a>
         </div>
     </div>
@@ -161,7 +209,7 @@
                 ejecuciones, el promedio de paquetes que el usuario debería comprar para completar el álbum.
                 El trabajo se centró en el proceso en distintos hilos para optimizar la ejecución del programa, mientras
                 se mantenía la interfaz de usuario separada de la lógica de trabajo.</p>
-            <a href="https://github.com/tuusuario/repositorio" class="repo-button" target="_blank">Ver código en
+            <a href="https://gitlab.com/LautaroMalleret/simulacionalbummundial" class="repo-button" target="_blank">Ver código en
                 GitHub</a>
         </div>
     </div>
@@ -202,7 +250,7 @@
                 Este proyecto fue una experiencia valiosa en mi carrera, ya que me enseñó a trabajar en equipo y me
                 permitió aplicar habilidades técnicas avanzadas de programación para
                 crear un videojuego divertido y emocionante en una plataforma 2D.</p>
-            <a href="https://github.com/tuusuario/repositorio" class="repo-button" target="_blank">Ver código en
+            <a href="https://gitlab.com/LautaroMalleret/TP-Programacion1" class="repo-button" target="_blank">Ver código en
                 GitHub</a>
         </div>
     </div>
@@ -240,7 +288,7 @@
                 Se usaba un algoritmo de grafos de nodos para crear un árbol generador mínimo con el algoritmo de Kruskal, para luego dividirlo y crear clusters de puntos cercanos. 
                 El proyecto se centró en trabajar con grafos de nodos y en la aplicación de algoritmos para resolver problemas complejos. 
                 Dicho proyecto me permitió aprender a cómo aplicar algoritmos para resolver problemas de manera efectiva en la programación.</p>
-            <a href="https://github.com/tuusuario/repositorio" class="repo-button" target="_blank">Ver código en GitHub</a>
+            <a href="https://gitlab.com/LautaroMalleret/graficadorademapas" class="repo-button" target="_blank">Ver código en GitHub</a>
         </div>
     </div>
 
@@ -274,37 +322,12 @@
         </div>
     </div>
 
-    <div id="project6" class="modal">
-        <div class="modal-content">
-            <button class="close-modal" data-project="project6">&times;</button>
-            <h2>Mantenimiento de hardware</h2>
 
-            <!-- Tecnologías o habilidades utilizadas -->
-            <div class="tech-used">
-                <p><strong>Mantenimiento, optimizacion e instalacion de software</strong></p>
-            </div>
-
-            <!-- Carrusel de imágenes -->
-            <div class="image-grid">
-                <img src="resources/tecnico/pc (1).jpg" alt="Imagen 1 del proyecto">
-                <img src="resources/tecnico/pc (2).jpg" alt="Imagen 1 del proyecto">
-                <img src="resources/tecnico/pc (3).jpg" alt="Imagen 1 del proyecto">
-                <img src="resources/tecnico/pc (4).jpg" alt="Imagen 1 del proyecto">
-
-            </div>
-            <!-- Descripción detallada del proyecto -->
-            <p class="project-description">Como hobby, me apasiona desmontar y armar computadoras, limpiarlas, instalar software y sistemas operativos, y optimizar su rendimiento. 
-                He adquirido una gran cantidad de conocimientos y habilidades en este campo, y siempre busco nuevas formas de mejorar mi experiencia en la informática. 
-                He trabajado con una variedad de sistemas operativos, tanto en computadoras de escritorio y portatiles, y me siento muy cómodo trabajando con hardware y software. 
-                Creo que estas habilidades podrían ser valiosas en una amplia gama de roles y proyectos en la industria tecnológica, y estoy emocionado de seguir aprendiendo 
-                sobre nuevas tecnologías y soluciones innovadoras.</p>
-        </div>
-    </div>
 
 
 
     <section id="skills">
-        <h2>Mis Habilidades</h2>
+        <h2 class="subtitle">Mis Habilidades</h2>
         <div class="skills-container">
             <div class="skill">
                 <i class="fab fa-java skill-icon"></i>
