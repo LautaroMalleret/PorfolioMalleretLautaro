@@ -16,20 +16,20 @@
         <div id="contact">
             <div class="contact-container">
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:lautaromalleret@gmail.com">lautaromalleret@gmail.com</a></p>
+                    <a href="mailto:lautaromalleret@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <p>lautaromalleret@gmail.com</p>
                 </div>
                 <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <p><a href="https://linkedin.com/in/lautaro-malleret-79b03919b" target="_blank">Linkedin</a></p>
+                    <a href="https://linkedin.com/in/lautaro-malleret-79b03919b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <p>Linkedin</p>
                 </div>
                 <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <p><a href="https://github.com/LautaroMalleret" target="_blank">GitHub</a></p>
+                    <a href="https://github.com/LautaroMalleret" target="_blank"><i class="fab fa-github"></i></a>
+                    <p>GitHub</p>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <p><a href="tel:+5491125400531">+54 9 11 25400531</a></p>
+                    <a href="tel:+5491125400531"><i class="fas fa-phone-alt"></i></a>
+                    <p>+54 9 11 25400531</p>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             </div> -->
             <div class="info">
                 <h1>&lt;Portfolio&gt; &lt;Lautaro Malleret&gt;</h1>
-                <p class="title">Estudiante de Sistemas | Developer Java</p>
+                <p class="title">Estudiante de Sistemas | Developer Full-Stack</p>
                 <!-- <p class="description">Soy estudiante avanzado de la Licenciatura en Sistemas en la UNGS y trabajo como
                     ayudante de 2da en materias de programacion. En este rol doy clases, ademas de corregir examenes,
                     gestiono material didactico y diseño trabajos prácticos. A lo largo de mi carrera, he adquirido
@@ -62,9 +62,12 @@
         <div class="projects">
             <div class="project" data-project="project">
                 <img src="resources/api-canchasba/canchasba-api.png" alt="Proyecto">
-                <h3>API de canchas de futbol de buenos aires </h3>
+                <h3>API de canchas de futbol de Buenos Aires </h3>
             </div>
-
+            <div class="project" data-project="project4">
+                <img src="resources/canchasba-web/canchasba.web.png" alt="Proyecto 4">
+                <h3>CanchasBA: Web para la búsqueda de canchas de fútbol</h3>
+            </div>
             <div class="project" data-project="project1">
                 <img src="resources/Wordle/Wordle.png" alt="Proyecto 1">
                 <h3>Wordle de nombres - juego de palabras</h3>
@@ -79,10 +82,11 @@
                 <img src="resources/Barbarianna/Barbarianna.png" alt="Proyecto 3">
                 <h3>Barbarianna - Juego 2D plataforma</h3>
             </div>
-            <div class="project" data-project="project4">
+
+            <!-- <div class="project" data-project="project4">
                 <img src="resources/mapas/mapas.png" alt="Proyecto 4">
                 <h3>Clusters - graficador de clusters en mapas</h3>
-            </div>
+            </div> -->
             <div class="project" data-project="project5">
                 <img src="resources/Arm - Wordle/Texto.png" alt="Proyecto 5">
                 <h3>Wordle pero en ARM - dessarrollado en assembler</h3>
@@ -127,14 +131,12 @@
                 Control de versiones : <b>GIT</b><br>
                 Manejador de dependencias : <b>MAVEN</b><br>
                 Despliegue : <b>RENDER con DOCKER</b><br>
-                Documentacion : <b>SWAGGER</b> <br>
-
-                link: <a href="https://canchasba-api.onrender.com/swagger-ui/index.html">https://canchasba-api.onrender.com/swagger-ui/index.html</a>
-                
+                Documentacion : <b>SWAGGER</b> <br>                
 
             </p>
-            <a href="https://github.com/LautaroMalleret/canchasba-api" class="repo-button" target="_blank">Ver código en
-                GitHub</a>
+            <a href="https://github.com/LautaroMalleret/canchasba-api" class="repo-button" target="_blank">Ver código en GitHub</a>
+            <a href="https://canchasba-api.onrender.com/swagger-ui/index.html" class="repo-button" target="_blank">Ver documentacion</a>
+
         </div>
     </div>
 
@@ -255,7 +257,45 @@
         </div>
     </div>
 
+
+
     <div id="project4" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" data-project="project4">&times;</button>
+            <h2>CanchasBA: Web para la búsqueda de canchas de fútbol</h2>
+
+            <!-- Subtítulo con enfoque del proyecto -->
+            <h3 class="project-subtitle">Portal web para la búsqueda y gestión de canchas de fútbol en la provincia de Buenos Aires, 
+                utilizando Angular y una API REST en Spring Boot para gestionar los datos de las canchas.                
+            </h3>
+
+            <!-- Tecnologías o habilidades utilizadas -->
+            <div class="tech-used">
+                <p><strong>Tecnologías utilizadas:</strong> Angular 19, Git, Typescript</p>
+            </div>
+
+            <!-- Carrusel de imágenes -->
+            <div class="image-grid">
+                <img src="resources/canchasba-web/canchasba.web.png" alt="Imagen 1 del proyecto">
+                <img src="resources/canchasba-web/canchasba.web1.png" alt="Imagen 2 del proyecto">
+                <img src="resources/canchasba-web/canchasba.web2.png " alt="Imagen 3 del proyecto">
+                <img src="resources/canchasba-web/canchasba.web3.png" alt="Imagen 4 del proyecto">
+            </div>
+            <!-- Descripción detallada del proyecto -->
+            <p class="project-description">
+                Portal web para la búsqueda y gestión de canchas de fútbol en la provincia de Buenos Aires, desarrollado en Angular. 
+                La aplicación permite a los usuarios buscar canchas filtrando por nombre, ubicación, tipo de suelo y tamaño, mostrando los resultados en una interfaz dinámica y responsiva. 
+                Además, integra una API REST creada en Spring Boot para gestionar los datos de las canchas, ofreciendo una experiencia eficiente y en tiempo real.</p>
+            <a href="https://github.com/LautaroMalleret/canchaba-web" class="repo-button" target="_blank">Ver código en GitHub</a>
+            <a href="https://LautaroMalleret.github.io/canchaba-web" class="repo-button" target="_blank">Ver pagina web</a>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="project4111111" class="modal">
         <div class="modal-content">
             <button class="close-modal" data-project="project4">&times;</button>
             <h2>Clusters - graficador de clusters en mapas</h2>
