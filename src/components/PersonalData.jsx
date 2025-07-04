@@ -13,7 +13,7 @@ export default function PersonalData() {
         <p><strong>Casado</strong></p>
         <p><strong>23 años</strong></p>
                 <a
-  href="/Malleret-Lautaro-cv.pdf"
+  href="/PorfolioMalleretLautaro/Malleret-Lautaro-cv.pdf"
   download
   className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
 >
