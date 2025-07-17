@@ -62,6 +62,22 @@ const projects =
     "github": "https://github.com/LautaroMalleret/canchaba-web",
     "web": "https://LautaroMalleret.github.io/canchaba-web"
   },
+    {
+    "id": "project10",
+    "title": "Landing Page - Barberia",
+    "subtitle": "Landing page simple, accesible y responsiva para una peluquería y barbería .",
+    "tech": "React con Vite, Typescript, Tailwind CSS.",
+    "images": [
+      "/PorfolioMalleretLautaro/img/barberia/1.png",
+      "/PorfolioMalleretLautaro/img/barberia/2.png",
+      "/PorfolioMalleretLautaro/img/barberia/3.png",
+      "/PorfolioMalleretLautaro/img/barberia/4.png",
+      "/PorfolioMalleretLautaro/img/barberia/5.png"
+    ],
+    "description": "Este proyecto fue desarrollado a pedido de una peluquería y barbería, con el objetivo de contar con una landing page moderna y accesible donde los clientes puedan navegar por los servicios disponibles, ver imágenes, descripciones, informacion acerca del lugar y comunicarse direcatamente mediante WhatsApp. El diseño priorizó la experiencia desde dispositivos móviles, permitiendo una navegación fluida, una visualización clara de los servicios, y un flujo de contacto sencillo para el usuario final.",
+    "github": "https://github.com/LautaroMalleret/Barberia",
+    "web": "https://barbershop-sm.netlify.app"
+  },
   {
     "id": "project1",
     "title": "Wordle de nombres - juego de palabras",
